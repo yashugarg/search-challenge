@@ -1,0 +1,39 @@
+.token {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.tokenIcon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f3f3f3;
+}
+
+.tokenIcon img {
+    width: 20px;
+    height: 20px;
+}
+
+.tokenTitle {
+    font-size: 11px;
+    font-weight: 400;
+    color: #1C1C26;
+}
+
+.tokenId {
+    font-size: 10px;
+    font-weight: 400;
+    color: #1C1C26;
+    opacity: 0.4;
+}

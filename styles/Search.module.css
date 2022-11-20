@@ -1,0 +1,66 @@
+.searchContainer{
+    position: fixed;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 2px solid rgba(139, 161, 190, 0.2);
+    background: linear-gradient(267.64deg, rgba(103, 69, 210, 0.2) 0%, rgba(103, 69, 210, 0) 28.32%) padding-box,
+    radial-gradient(133.78% 573.84% at 10.27% 25.68%, rgba(230, 0, 122, 0.2) 0%, rgba(230, 0, 122, 0) 100%) padding-box,
+    #000000;
+    /* border: 
+        linear-gradient(to right, #911479, #9a0e71, #5237a7);
+    border-image-slice: 1; */
+    box-shadow: 0px 26.3617px 166.408px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+}
+
+.searchFilter button{
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.filterContent{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 125%;
+}
+.filterContentDesc {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 125%;
+    opacity: 0.5;
+}
+
+.selectedItem{
+    background-color: black !important;
+    border: 2px solid transparent !important;
+    background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #911479, #9a0e71, #5237a7) border-box;
+    border-radius: 10px;
+}
+
+.searchButton{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.searchButton img{
+    width: 15px;
+    height: 15px;
+}

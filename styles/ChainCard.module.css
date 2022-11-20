@@ -1,0 +1,42 @@
+.chain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #828282;
+    border-radius: 10px;
+}
+
+.chainTitleBlock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeStatus{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.chainTitle {
+    font-size: 11px;
+    font-weight: 400;
+    color: #1C1C26;
+    display: inline;
+}
+
+.selectionButton{
+    border:none;
+    color: #828282;
+    font-size: 11px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 6px;
+}
