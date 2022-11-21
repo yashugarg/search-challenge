@@ -1,21 +1,8 @@
 import Head from "next/head";
-import { useState } from "react";
-import Main from "../components/main";
-import AmountFilter from "../components/search/amountFilter";
-import ChainFilter from "../components/search/chainFilter";
-import FilterContainer from "../components/search/filterContainer";
 import Search from "../components/search/search";
-import TokenFilter from "../components/search/tokenFilter";
 import styles from "../styles/Home.module.css";
-// import { CSSTransition } from "react-transition-group";
 
 export default function Home() {
-  const [filterOpen, setfilterOpen] = useState(false);
-
-  const _toggleFilter = () => {
-    setfilterOpen(!filterOpen);
-  };
-
   return (
     <div className={styles.container} style={{ backgroundColor: "#121316" }}>
       <Head>
