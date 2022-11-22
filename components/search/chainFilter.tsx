@@ -1,19 +1,34 @@
 import FilterContainer from "./filterContainer";
 import ChainCard from "./chainCard";
 
-function ChainFilter() {
+const chains = [
+  { title: "Ethereum Mainnet", isActive: true },
+  { title: "Ropsten", isActive: false },
+];
+
+type chainProps = {
+  chain: string;
+  setChain: (chain: string) => void;
+};
+
+function ChainFilter({ chain, setChain }: chainProps) {
   return (
-    <FilterContainer title={"Select Chain"} direction="column">
-      <ChainCard
-        title="Ethereum Mainnet"
-        isActive={true}
-        isSelected={false}
-      ></ChainCard>
-      <ChainCard
-        title="Ropsten"
-        isActive={false}
-        isSelected={false}
-      ></ChainCard>
+    <FilterContainer
+      title={"Select Chain"}
+      direction="column"
+      onClear={() => setChain("")}
+    >
+      {chains.map((c) => {
+        return (
+          <ChainCard
+            key={c.title}
+            title={c.title}
+            isActive={c.isActive}
+            isSelected={chain == c.title}
+            onSelect={() => setChain(c.title)}
+          />
+        );
+      })}
     </FilterContainer>
   );
 }

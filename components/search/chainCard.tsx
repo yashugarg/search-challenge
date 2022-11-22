@@ -4,9 +4,10 @@ type chainCardProps = {
   title: string;
   isActive: boolean;
   isSelected: boolean;
+  onSelect: () => void;
 };
 
-function ChainCard({ title, isActive, isSelected }: chainCardProps) {
+function ChainCard({ title, isActive, isSelected, onSelect }: chainCardProps) {
   return (
     <div className={classes.chain}>
       <div className={classes.chainTitleBlock}>
@@ -20,8 +21,10 @@ function ChainCard({ title, isActive, isSelected }: chainCardProps) {
       </div>
       <button
         className={classes.selectionButton}
+        onClick={onSelect}
+        disabled={!isActive}
         style={{
-          backgroundColor: isSelected ? "#E6007A" : "rgba(139, 161, 190, 0.2)",
+          backgroundColor: isSelected ? "rgba(139, 161, 190, 0.2)" : "#E6007A",
         }}
       >
         Select

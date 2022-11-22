@@ -6,7 +6,15 @@
     margin: 5px;
     padding: 10px;
     height: 100%;
+    cursor: pointer;
+}
+
+.unselected {
     border: 1px solid black;
+}
+
+.selected {
+    border: 2px solid #E6007A;
 }
 
 .tokenIcon {

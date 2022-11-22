@@ -39,4 +39,10 @@
     margin-left: 20px;
     padding: 5px;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+.selectionButton:disabled{
+    background-color: rgba(139, 161, 190, 0.2) !important;
+    cursor: not-allowed;
 }

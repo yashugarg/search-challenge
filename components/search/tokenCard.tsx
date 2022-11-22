@@ -4,11 +4,17 @@ type tokenCardProps = {
   title: string;
   id: string;
   icon: string;
+  isSelected: boolean;
+  onSelect: () => void;
 };
 
-function TokenCard({ title, id, icon }: tokenCardProps) {
+function TokenCard({ title, id, icon, isSelected, onSelect }: tokenCardProps) {
+  const _selectionClass = [
+    classes.token,
+    isSelected ? classes.selected : classes.unselected,
+  ].join(" ");
   return (
-    <div className={classes.token}>
+    <div className={_selectionClass} onClick={onSelect}>
       <div className={classes.tokenIcon}>
         <img src={icon} />
       </div>
