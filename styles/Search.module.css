@@ -49,12 +49,14 @@
     font-weight: 400;
     font-size: 11px;
     line-height: 125%;
+    color: #FFFFFF;
 }
 .filterContentDesc {
     font-weight: 400;
     font-size: 10px;
     line-height: 125%;
     opacity: 0.5;
+    color: #FFFFFF;
 }
 
 .selectedItem{
@@ -71,6 +73,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    color: #FFFFFF;
     margin: 5px;
 }
 
